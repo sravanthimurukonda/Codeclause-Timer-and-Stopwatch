@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timer and Stopwatch</title>
+</head>
+<body>
+  <h1>Timer and Stopwatch</h1>
+  <style>
+    body {
+      background: linear-gradient(to right, hsl(200, 83%, 64%), #253eab);
+      color: #b6dd18;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+  <div class="box" id="timerBox">
+    <img src="timer.png" alt="Timer">
+    <h2 style="color: black;">Timer</h2>
+    <div id="timer" style="color: black;">0</div>
+    <button id="startTimerButton" class="button start" onclick="startTimer();">Start Timer</button>
+    <button id="stopTimerButton" class="button stop" onclick="stopTimer();" disabled>Stop Timer</button>
+  </div>
+  
+  <div class="box" id="stopwatchBox">
+    <img src="stopwatch.png" alt="Stopwatch">
+    <h2 style="color: black;">Stopwatch</h2>
+    <div id="stopwatch" style="color: black;">0.00</div>
+    <button id="startStopwatchButton" class="button start" onclick="startStopwatch();">Start Stopwatch</button>
+    <button id="stopStopwatchButton" class="button stop" onclick="stopStopwatch();" disabled>Stop Stopwatch</button>
+  </div>
+</body>
+</html>
